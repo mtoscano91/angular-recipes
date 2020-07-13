@@ -20,7 +20,9 @@ export class RecipeService {
       [new Ingredient('Bread', 2), new Ingredient('Meat', 4)]
     ),
   ];
-
+  getRecipe(index: number) {
+    return this.recipes[index];
+  }
   getRecipes() {
     return this.recipes.slice();
   }
